@@ -1,15 +1,16 @@
-import React from 'react';
-import CartWidget from './CartWidget';
+import React from "react";
+import CartWidget from "./CartWidget";
+import "./NavBar.css";
 
 const NavBar = () => {
   return (
-    <nav style={{ display: 'flex', justifyContent: 'space-between', padding: '1rem', background: '#eee' }}>
-      <div><strong>MiTienda</strong></div>
-      <div>
-        <a href="#" style={{ marginRight: '1rem' }}>Inicio</a>
-        <a href="#" style={{ marginRight: '1rem' }}>Productos</a>
-        <a href="#">Contacto</a>
-      </div>
+    <nav className="navbar">
+      <div className="navbar-logo">MiTienda</div>
+      <ul className="navbar-links">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Productos</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
       <CartWidget />
     </nav>
   );
