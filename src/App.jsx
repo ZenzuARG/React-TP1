@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <NavBar />
-      <ItemListContainer greeting="¡Bienvenido a MiTienda!" />
+      <ItemListContainer greeting="¡Bienvenido a PixelGear!" />
     </>
   );
 }
